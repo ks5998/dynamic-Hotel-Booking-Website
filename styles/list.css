@@ -1,0 +1,10 @@
+.image {
+    height: 150px;
+    width: 150px;
+}
+.image_div {
+    position: relative;
+    background-color: rgb(132,136,139);
+    width: 40%;
+    margin: 2%;
+}

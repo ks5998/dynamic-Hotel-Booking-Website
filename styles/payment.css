@@ -1,0 +1,17 @@
+.payment_imagediv {
+    position: relative;
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+.payment_radisson_bluimage {
+    height: 500px;
+    width: 500px;
+}
+.table {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1% 2%;
+    padding: 1% 2%;
+}
