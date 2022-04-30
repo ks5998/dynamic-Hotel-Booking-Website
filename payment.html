@@ -7,19 +7,18 @@
     <title>Payment</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 <body>
     <div>
          <!-------------header div------------->
-         <div class="header">
-             <!-- logo -->
-             <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo" height="100px" width="150px"></a>
-             
-             <!-- login link -->
-             <a href="login.html">Login</a>
+         <header class="header">
+            <!-- logo -->
+            <img class="logo" src="assests/images/logo.png" alt="logo">
+            <!-- login link -->
+            <a class="login" href="login.html">Login</a>
+        </header>
 
-        </div>
-
-       <div>
+       <div class="payment">
         <!-------------content div------------->
         <div class="payment_imagediv">
         <img class="payment_radisson_bluimage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
@@ -30,7 +29,7 @@
         </div>
 
         <div>
-            <table>
+            <table class="row">
                 <tr>
                     <th>
                         Name:
@@ -42,7 +41,7 @@
             </table>
             <br>
 
-            <table>
+            <table class="row">
                 <tr>
                     <th>
                         Number of Adults:
@@ -54,7 +53,7 @@
             </table>
             <br>
 
-            <table>
+            <table class="row">
                 <tr>
                     <th>
                         Check-in Date:
@@ -66,7 +65,7 @@
             </table>
             <br>
                 
-            <table>
+            <table class="row">
                 <tr>
                     <th>
                         Check-out Date:
@@ -103,29 +102,28 @@
             </table>
             </div>
         <br>
-        <a href="payment.html">Pay Now</a>
+        <a class="pay" href="payment.html">Pay Now</a>
         </div>
             
          <!-------------footer div------------->
-         <div class="footer">
-            
+         <footer class="footer">
             <!-- Contact Us -->
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a class="contact" href="contact.html" >Contact Us</a>
             <br>
-
             <!-- facebook icon -->
-            <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt="" height="20px" width="22px">_</a>
+            <div class="social_icon">
+                <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt=""></a>
 
-            <!-- instagram icon -->
-            <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt="" height="20px" width="22px">_</a>
-
-            <!-- twitter icon -->
-            <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt="" height="20px" width="22px"></a>
+                <!-- instagram icon -->
+                <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt=""></a>
+    
+                <!-- twitter icon -->
+                <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
+            </div>
             <br>
-
              <!-- copyright text -->
-            <span>&copy; 2020 ROOM SEARCH PVT.LTD.</span>
-         </div>
+            <p class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</p>
+        </footer>
     </div>
 </body>
 </html>

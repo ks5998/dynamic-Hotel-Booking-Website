@@ -7,31 +7,29 @@
     <title>Index</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <div>
 
          <!-------------header div------------->
-    <header class="header">
-        <div>
+        <header class="header">
              <!-- logo -->
            <img class="logo" src="assests/images/logo.png" alt="logo">
             <!-- login link -->
-            <a href="login.html">Login</a>
-        </div>
-    </header>
+            <a class="login" href="login.html">Login</a>
+        </header>
         
          <!-------------content div------------->
-        <div>
+        <div class="content">
              <!-- Search Bar text -->
              <div class="search">
-                <form action="" class="search bar">
-                <input type="text" placeholder="City">
+                <form action="">
+                <input class="search_bar" type="text" placeholder="City">
                 </form>
              </div>
-           
-            
+             
              <div class="city">
                 <!--delhi image with link-->
              <a href="list.html"><img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
@@ -46,35 +44,35 @@
             <!--kolkata image-->
             <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
             <br>
-        </div>
+        
             
             <!--View more link-->
-            <a href="#">View more >> </a>
-            <br>
+            <a class="view_link" href="index.html"> <p class="view_more"> View more >> </p></a>
+        </div>
             
              
         </div>
         
          <!-------------footer div------------->
-        <div class="footer">
+        <footer class="footer">
 
             <!-- Contact Us -->
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a class="contact" href="contact.html" >Contact Us</a>
             <br>
-
             <!-- facebook icon -->
-            <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt="">_</a>
+            <div class="social_icon">
+                <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt=""></a>
 
-            <!-- instagram icon -->
-            <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt="">_</a>
-
-            <!-- twitter icon -->
-            <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
+                <!-- instagram icon -->
+                <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt=""></a>
+    
+                <!-- twitter icon -->
+                <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
+            </div>
             <br>
-
              <!-- copyright text -->
-            <span>&copy; 2020 ROOM SEARCH PVT.LTD.</span>
-        </div>
+            <p class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</p>
+        </footer>
     </div>
 </body>
 </html>

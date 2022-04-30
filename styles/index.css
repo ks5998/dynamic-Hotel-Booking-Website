@@ -1,11 +1,25 @@
+.content {
+    style="overflow-y: scroll; width: 100%;  overflow: hidden; position: absolute; height: 750px;"
+}
 .search {
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
     height: 380px;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin: 0;
+    background-position: center;
+}
+.search_bar {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    border: 1px solid transparent;
+    background-color: #f1f1f1; 
+    padding : 10px; 
+    font-size: 16px; 
+    border-radius: 12px; 
+    text-align: start 
 }
 .city {
     margin-right: 15%;
@@ -16,4 +30,12 @@
     width: 150px;
     padding: 4%;
     border-radius: 25%;
+}
+.view_more {
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+.view_link {
+    text-decoration: none;
 }

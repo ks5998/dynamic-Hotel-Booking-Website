@@ -1,10 +1,35 @@
 .image {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
 }
 .image_div {
-    position: relative;
-    background-color: rgb(132,136,139);
-    width: 40%;
-    margin: 2%;
+   margin: 2%;
+   background-color: rgb(132,136,139); 
+   width: 40%;
+   float: left;
+}
+#list-view{
+    scroll-behavior: smooth;
+}
+.first {
+    overflow: auto;
+}
+.link {
+    margin-top: 7%;
+}
+.listview {
+  margin-left: 38%;
+  padding-right: 2%;
+  font-weight: bold;
+  text-decoration: none; 
+  color:black
+}
+.mapview {
+  font-weight: bold;
+  text-decoration: none; 
+  color:black
+}
+.map {
+   scroll-behavior: smooth;
+   display: none;
 }
