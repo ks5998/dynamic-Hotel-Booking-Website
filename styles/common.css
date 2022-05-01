@@ -1,14 +1,19 @@
 body, html {
-    height: 100%;
+  height: 100%;
   width: 100%;
-  margin:0%;
+  margin:0 auto;
   background-color: #e0e0e0;
   font-family:  'Ubuntu', sans-serif;
+  overflow: auto;
+  bottom: 100px;
+  display:flex;
 }
 .logo {
     height: 60px;
     width: 60px;
-    margin: auto;
+    margin: 1%;
+    margin-top: 0%;
+    vertical-align: middle;
 }
 .icon {
     height: 20px;
@@ -19,19 +24,30 @@ body, html {
     background-color:rosybrown;
     position: fixed;
     width:100%;
+    height: 10%;
     top: 0;
-    z-index: 80;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .footer {
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: rosybrown;
+    height: auto;
+    top: auto;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 1%;
 }
 .login {
-    right: 0%;
-    margin-top: 20px;
+    top: 15px;
+    right: 15px;
+    margin: 1%;
     margin-right: 1%;
+    vertical-align: middle;
     text-decoration: none;
     position: absolute;
     color: black;
@@ -45,12 +61,8 @@ body, html {
   color: black;
 }
 .copyright {
-    font-size: 10px;
-    text-align: center;
+    font-size: small;
 }
 .social_icon {
-    position: absolute;
-   right:1%;
-   align-items: center;
-   bottom:32%;
+    margin-right: 30px;
 }

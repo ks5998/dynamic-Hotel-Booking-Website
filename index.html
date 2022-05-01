@@ -10,19 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div>
-
+<body> 
+<div class="top">
          <!-------------header div------------->
         <header class="header">
              <!-- logo -->
-           <img class="logo" src="assests/images/logo.png" alt="logo">
+            <img class="logo" src="assests/images/logo.png" alt="logo"></a>
             <!-- login link -->
             <a class="login" href="login.html">Login</a>
         </header>
+
+           
         
          <!-------------content div------------->
-        <div class="content">
+        <div>
              <!-- Search Bar text -->
              <div class="search">
                 <form action="">
@@ -30,37 +31,63 @@
                 </form>
              </div>
              
-             <div class="city">
-                <!--delhi image with link-->
-             <a href="list.html"><img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
-                " alt=""></a>
+            <div class="city">
+            <!--delhi image with link-->
+            <div class="container">
+            <a href="list.html"><img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
+                " alt="">
+                <div class="layer">
+                    <div class="texts">Delhi</div>
+                </div>
+            </a>
+            </div>
             
             <!--goa image-->
+            <div class="container">
             <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="">
+                <div class="layer">
+                    <div class="texts">Goa</div>
+                </div>
+            </div>
+
+            
 
             <!--hyderabad image-->
-            <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="">
+            <div class="container">
+                <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="">
+                    <div class="layer">
+                        <div class="texts">Hyderabad</div>
+                    </div>
+                </div>
+
+           
 
             <!--kolkata image-->
-            <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
-            <br>
+            <div class="container">
+                <img class="location" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
+                    <div class="layer">
+                        <div class="texts">Kolkata</div>
+                    </div>
+                </div>
+
+        </div>
         
-            
             <!--View more link-->
-            <a class="view_link" href="index.html"> <p class="view_more"> View more >> </p></a>
+            <div class="view_more">
+                <a class="view_link" href="index.html">View more >></a>
+            </div>
         </div>
-            
-             
-        </div>
-        
+           
          <!-------------footer div------------->
         <footer class="footer">
 
             <!-- Contact Us -->
             <a class="contact" href="contact.html" >Contact Us</a>
             <br>
+            <!-- copyright text -->
+            <span class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</span>
             <!-- facebook icon -->
-            <div class="social_icon">
+            <span class="social_icon">
                 <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt=""></a>
 
                 <!-- instagram icon -->
@@ -68,11 +95,8 @@
     
                 <!-- twitter icon -->
                 <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
-            </div>
-            <br>
-             <!-- copyright text -->
-            <p class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</p>
+            </span>
         </footer>
-    </div>
-</body>
+</div>
+</body> 
 </html>

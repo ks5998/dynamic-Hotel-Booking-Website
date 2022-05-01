@@ -5,125 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <link rel="stylesheet" href="styles/common.css">
+    <!-- <link rel="stylesheet" href="styles/common.css"> -->
     <link rel="stylesheet" href="styles/payment.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 <body>
-    <div>
-         <!-------------header div------------->
-         <header class="header">
-            <!-- logo -->
-            <img class="logo" src="assests/images/logo.png" alt="logo">
-            <!-- login link -->
-            <a class="login" href="login.html">Login</a>
+    <div id="full">
+        <header>
+            <a href="index.html"><img src="assests\images\logo.png" alt="logo" class="logo"></a>
+            <a href="login.html" target="_blank" class="login">Login</a>
         </header>
-
-       <div class="payment">
-        <!-------------content div------------->
-        <div class="payment_imagediv">
-        <img class="payment_radisson_bluimage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
-
-        <h2>Radisson Blu Hotel</h2>
-        <p>#38 of 1,289 hotels in New Delhi</p>
-        <p>National Highway 8, New Delhi 110017 India</p>
-        </div>
-
         <div>
-            <table class="row">
-                <tr>
-                    <th>
-                        Name:
-                    </th>
-                    <td>
-                        John Doe
-                    </td>
-                </tr>
-            </table>
-            <br>
-
-            <table class="row">
-                <tr>
-                    <th>
-                        Number of Adults:
-                    </th>
-                    <td>
-                        2
-                    </td>
-                </tr>
-            </table>
-            <br>
-
-            <table class="row">
-                <tr>
-                    <th>
-                        Check-in Date:
-                    </th>
-                    <td>
-                        06/06/2020
-                    </td>
-                </tr>
-            </table>
-            <br>
-                
-            <table class="row">
-                <tr>
-                    <th>
-                        Check-out Date:
-                    </th>
-                    <td>
-                        08/06/2020
-                    </td>
-                </tr>
-            </table>
-            <br>
-
-            <div class="table">
-            <table>
-                <tr>
-                    <th>
-                        Tariff Breakdown:
-                    </th>
-                    <td>
-                        Rs.1000 x 2 Adults x 5 Nights
-                    </td>
-                </tr>
-            </table>
-            <br>
-
-            <table>
-                <tr>
-                    <th>
-                        Total Amount:
-                    </th>
-                    <td>
-                        Rs.10000
-                    </td>
-                </tr>
-            </table>
+            <div class="info">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    class="hotelImage" alt="Radisson Blu Hotel">
+                    <div class="detailsColumn"><h3>Radisson Blu Hotel</h3>
+                <p>#38 of 1,289 hotels in New Delhi</p>
+                <p>National Highway 8, New Delhi 110017</p></div></div>
             </div>
-        <br>
-        <a class="pay" href="payment.html">Pay Now</a>
+
+            <div class="tarrif">
+                <div>
+                    <p><b>Name:</b> John Doe</p>
+                    <p><b>Number of Adults:</b> 2</p>
+                    <p><b>Check-in Date:</b>06/06/2020</p>
+                    <p><b>Check-out Date:</b>08/06/2020</p>
+                </div>
+
+                <div style="margin-top: 2%;">
+                    <p><b>Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
+                    <p><b>Total Amount:</b> Rs. 10000</p>
+                </div>
+
+                <div style="margin-top: 4%;"><a href="" id="linkSty">Pay Now</a></div>
+            </div>
+            <footer>
+                <span><a href="contact.html" target="_blank" id="linkSty">Contact Us</a></span>
+                <span> © 2020 ROOM SEARCH PVT. LTD</span>
+                <span style="margin-right: 30px;"><a href="https://www.facebook.com" target="_blank"><img
+                            class="socialLogo" src="assests/images/facebook.png" alt="facebooklogo"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="socialLogo"
+                            src="assests/images/instagram.png" alt="instagramlogo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="socialLogo"
+                            src="assests/images/twitter.png" alt="twitterlogo"></a>
+                </span>
+
+            </footer>
         </div>
-            
-         <!-------------footer div------------->
-         <footer class="footer">
-            <!-- Contact Us -->
-            <a class="contact" href="contact.html" >Contact Us</a>
-            <br>
-            <!-- facebook icon -->
-            <div class="social_icon">
-                <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt=""></a>
-
-                <!-- instagram icon -->
-                <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt=""></a>
-    
-                <!-- twitter icon -->
-                <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
-            </div>
-            <br>
-             <!-- copyright text -->
-            <p class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</p>
-        </footer>
-    </div>
 </body>
 </html>

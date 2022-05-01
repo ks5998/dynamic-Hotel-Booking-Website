@@ -5,82 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
-    <link rel="stylesheet" href="styles/common.css">
+    <!-- <link rel="stylesheet" href="styles/common.css"> -->
     <link rel="stylesheet" href="styles/detail.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <!-------------header div------------->
-        <header class="header">
-            <!-- logo -->
-            <img class="logo" src="assests/images/logo.png" alt="logo">
-            <!-- login link -->
-            <a class="login" href="login.html">Login</a>
+    <div id="full">
+        <header>
+            <a href="index.html"><img src="assests\images\logo.png" class="logo" alt="logo"></a>
+            <a href="login.html" target="_blank" class="login">Login</a>
         </header>
-
-       <!-------------content div------------->
         <div>
-            <img class="detail" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
-            <br>
+            <div class="mainBox">
+                <div class="sideBox1">
+                    <img class="hotelImage"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                </div>
+                <div class="sideBox2">
+                    <form action="payment.html" class="formStyle">
 
-            <!--book now link-->
-            <form action="payment.html" method="get" class="booking_form" autocomplete="off">
-                <label for="adults">Adults:</label>
-                <input type="number" id="adults" name="adults" min="1">
-                <br>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required autocomplete="off">
-                <br>
-                <label for="from date">From Date:</label>
-                <input type="date" id="from date" name="from date" required>
-                <br>
-                <label for="to date">To Date:</label>
-                <input type="date" id="to date" name="to date">
-                <br>
-                <label for="total">Total:</label>
-                <input type="price" id="price" name="price" value="" readonly>
-                <br>
-                <input type="Submit" value="Book Now">
-            </form>
+                        <div class="labelStyle">
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="adults" name="number" min="1" required class="length">
+                        </div><br>
 
-            <div class="description">
-            <h2>Radisson Blu Hotel</h2>
-            <p>RATING</p>
-            <P>5 Star</P>
-            <p>AMENITIES</p>
-            <ul>
-                <li>Room service</li>
-                <li>Restaurant</li>
-                <li>Business centre</li>
-                <li>Fitness centre</li>
-                <li>Pool</li>
-            </ul>
+                        <div class="labelStyle">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required class="length">
+                        </div><br>
 
-            <h5>DESCRIPTION</h5>
-            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit modi excepturi praesentium animi dicta laboriosam mollitia earum qui obcaecati aliquid quis, laudantium tempore quam accusantium repellat. Officia sit dolor aperiam?</P>
+                        <div class="labelStyle">
+                            <label for="from">From Date:</label>
+                            <input type="date" id="from" name="from" required class="length">
+                        </div><br>
+                        <div class="labelStyle">
+                            <label for="toDate">To Date:</label>
+                            <input type="date" id="toDate" name="toDate" required class="length">
+                        </div><br>
+
+                        <div class="labelStyle">
+                            <label for="total">Total</label>
+                            <input type="text" id="total" name="total" readonly="readonly" class="length">
+                        </div><br>
+
+                        <input type="submit" value="Book Now" class="submitstyle">
+
+
+                    </form>
+                </div>
+            </div>
+            <div id="detailStyle">
+                <h2>Radisson Blu Hotel</h2>
+                <p>RATING</p>
+                <p>5 Star</p>
+                <p>AMENITIES</p>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <div>
+                    <h5>DESCRIPITION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa beatae doloremque
+                        temporibus
+                        perspiciatis delectus earum, odit dolorum quaerat deleniti velit ratione laboriosam illum eius
+                        ab at
+                        aliquam, qui nihil?</p>
+                </div>
             </div>
         </div>
-
-         <!-------------footer div------------->
-         <footer class="footer">
-
-            <!-- Contact Us -->
-            <a class="contact" href="contact.html" >Contact Us</a>
-            <br>
-            <!-- facebook icon -->
-            <div class="social_icon">
-                <a href="https://www.facebook.com" target="_blank"> <img class="icon" src="assests/images/facebook.png" alt=""></a>
-
-                <!-- instagram icon -->
-                <a href="https://www.instagram.com" target="_blank"> <img class="icon" src="assests/images/instagram.png" alt=""></a>
-    
-                <!-- twitter icon -->
-                <a href="https://twitter.com" target="_blank"> <img class="icon" src="assests/images/twitter.png" alt=""></a>
-            </div>
-            <br>
-             <!-- copyright text -->
-            <p class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD.</p>
+        <footer>
+            <span><a href="contact.html" target="_blank" id="linkSty">Contact Us</a></span>
+            <span> © 2020 ROOM SEARCH PVT. LTD</span>
+            <span style="margin-right: 30px;"><a href="https://www.facebook.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/facebook.png" alt="facebooklogo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/instagram.png" alt="instagramlogo"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/twitter.png" alt="twitterlogo"></a>
+            </span>
         </footer>
     </div>
 </body>
