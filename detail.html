@@ -3,108 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles/detail.css">
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-  />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .checked {
+        color: orange;
+      }
+      </style>
   </head>
-  <body>
-    <body>
-      <div class="my-container">
-        <!-- HEADER DIV START -->
-        <header class="header-div">
-          <a href="index.html">
-            <img
-            class="logo-img"
-            src="assests/images/logo.png"
-            alt="logo"
-            width="150px"
-            height="100px"
-          />
-          </a>
-          <button type="button" class="login-icon btn btn-light " onclick="handleLogin()">Login</button>        </header>
-         <!-- HEADER DIV END -->
+  <body style="background-color:#e0e0e0 ;height: auto;">
+    <div >
+      <header class="my-header-div">
+        <a href="index.html"><img  class="logo-img" src="assests/images/logo.png" alt="logo" /></a>
+        <button type="button" class="login-icon btn btn-light " onclick="handleLogin()">Login</button>
+      </header>
 
-         <!-- CONTENT DIV START  -->
-         <div class="content-div">
-          <!-- <li><a type="dot" href="list.html">List Veiw</a></li>
-          <li><a href="list.html">Map Veiw</a></li> -->
-          <div class="radisson-blu-hotel">
+    <div style="background-color:#e0e0e0 ;">
 
-              <div class="booking-details">
-                <div class="hotel-image">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                </div>
-                <div class="booking-form">
-                  
-                  <form action="payment.html">
-                    <div class="form-inp">
-                      <label for="ad">Adults:</label>
-                      <input 
-                      type="number" 
-                      name="ad" 
-                      id="ad"
-                      min="1"
-                      step="1" 
-                      required >
-                    </div>
-                    <div class="form-inp">
-                      <label for="name">Name:</label>
-                      <input type="text" name="name" id="name" required >
-                    </div>
-                    <div class="form-inp">
-                      <label for="fDate">From Date</label>
-                    <input type="date" name="fDate" id="fDate" required>
-                    </div>    
-                    <div class="form-inp">
-                      <label for="tDate">To Date</label>
-                    <input type="date" name="tDate" id="tDate" required>
-                    </div>
-                    
-                    <div class="form-inp">
-                      <label for="Total">Total:</label>
-                    <input type="number" id="Total"  name="Total" disabled >
-                    </div>
-                    
-                    <div class="form-inp">
-                      <button class="btn-tansp">Book Now</button>
-                      <!-- <button type="button" class="btn-tansp">Book Now</button> -->
-                    </div>
-                    <!-- <a href="payment.html">Book Now</a> -->
-                    
-                  </form>
-                </div>
-                
+    <div>
+      <header id="header">
+
+      </header>
+
+    <div style="background-color:#e0e0e0 ;">
+
+      <!-- Banner -->
+
+      <div class="row mainDiv">
+
+        <div class="imgDiv col-lg-8">
+          <div id="carouselExampleControls" class="carousel " data-ride="carousel">
+            <div>
+              <a class="carousel-control-prev-icon carousel-control-prev" style="margin-left: 4%;" href="#carouselExampleControls" role="button"
+                data-slide="prev">
+                <span class="prev-icon" aria-hidden="true"
+                  style="background-size: 259% 500% !important; color: rosybrown !"></span>
+              </a>
+            </div>
+
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                  class="d-block image" alt="...">
               </div>
-
-              <div class="hotel-description">
-                <h2>Radisson Blu Hotel</h2>
-
-                <h3>RATING</h3>
-                <p>5 star</p>
-                <h3>AMENITIES</h3>
-                    <li>Room Service</li>
-                    <li>Restaurant</li>
-                    <li>Business Center</li>
-                    <li>Fitness Center</li>
-                    <li>Pool</li>
-                <h3>DESCRIPTION</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore quis, ut mollitia sed incidunt, dolorum eius ducimusnumquam soluta voluptas magnam hic sapiente culpa, quasi perferendis! Expedita, animi suscipit.</p>
+              <div class="carousel-item">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg"
+                  class="d-block image" alt="...">
               </div>
-              
+              <div class=" carousel-item">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
+                  class="d-block image" alt="...">
+              </div>
+            </div>
+
+            <div>
+              <a class="carousel-control-next-icon carousel-control-next" style="margin-right: 4%;" href="#carouselExampleControls" role="button"
+                data-slide="next">
+                <span class="next-icon" aria-hidden="true" style="background-size: 259% 100% !important"></span>
+              </a>
+            </div>
+
           </div>
+
+
+        </div>
+
+        <div class="formDiv col-lg-4">
+          <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
+          <form action="payment.html" method="GET" target="_self" autocomplete="off">
+
+
+            <ul style="list-style-type: none;">
+              <li class="listSty">
+                <label class="labelSty" for="adult">Adults:</label>
+                <input class="inputSty" id="adults" type="number" id="adult" onfocus="call()" onchange="call()" name="adult" min="1" required autocomplete="off"
+                  value="1"><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="name">Name:</label>
+                <input class="inputSty" type="text" id="name" name="name1" required autocomplete="off"><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="date1">From Date:</label>
+                <input class="inputSty"   type="date" id="fromDate" name="date1" onchange="call()" required autocomplete="off" /><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="date2">To Date:</label>
+                <input class="inputSty toDate" type="date" name="date2" id="toDate" onchange="call()" required autocomplete="off" /><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="price">Total:</label>
+                <input class="inputSty total" type="text" name="price" id="price" autocomplete="off" readonly /><br />
+              </li>
+
+              <li style="display: flex; padding: 1em; justify-content: center;">
+                <a href="payment.html" target="_self">
+                  <button type="submit" class="btn btn-outline-success" style="padding:3px" id="bookNow">Book
+                    Now</button>
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
 
-       <!-- Modal  DIV start -->
 
-       <div class="modal login-modal" tabindex="-1">
+      <div style="margin-left: 4%; margin-right: 4%;">
+        <h2>Radisson Blu Hotel</h2>
+        <span style="font-family:cursive;">
+          RATING </br>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+
+        </span> </br>
+
+        <span style="font-family:cursive;"> AMENITIES </span>
+        <ul>
+          <li>Room Service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>Pool</li>
+        </ul>
+        <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
+          <h5 style="font-family:cursive;">DESCRIPTION</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero
+            delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus
+            architecto!</p>
+        </div>
+      </div>
+    </div>
+      <!-- Modal  DIV start -->
+
+      <div class="modal login-modal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -115,116 +161,117 @@
                 data-bs-dismiss="modal"
                 aria-label="Close"
 
-                onclick="closeLogin(event)"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form class="form-control py-4" onsubmit="closeLogin(event)">
-                <div class="row">
-                  <div class="col">
-                    <label for="email">Username </label>
-                  </div>
-                  <div class="col-8">
-                    <input type="email" name="email" required />
-                  </div>
-                </div>
-                <br />
-                <div class="row">
-                  <div class="col">
-                    <label for="password">Password</label>
-                  </div>
-                  <div class="col-8">
-                    <input
-                      type="password"
-                      name="password"
-                      autocomplete="off"
-                      required
-                    />
-                  </div>
-                </div>
-              
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <input type="submit" value="login" class="btn btn-primary"/>
-            </div>
+
+        </div>
+
+        <div class="formDiv col-lg-4">
+          <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
+          <form action="payment.html" method="GET" target="_self" autocomplete="off">
+
+
+            <ul style="list-style-type: none;">
+              <li class="listSty">
+                <label class="labelSty" for="adult">Adults:</label>
+                <input class="inputSty" id="adults" type="number" id="adult" onfocus="call()" onchange="call()" name="adult" min="1" required autocomplete="off"
+                  value="1"><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="name">Name:</label>
+                <input class="inputSty" type="text" id="name" name="name1" required autocomplete="off"><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="date1">From Date:</label>
+                <input class="inputSty"   type="date" id="fromDate" name="date1" onchange="call()" required autocomplete="off" /><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="date2">To Date:</label>
+                <input class="inputSty toDate" type="date" name="date2" id="toDate" onchange="call()" required autocomplete="off" /><br />
+              </li>
+
+              <li class="listSty">
+                <label class="labelSty" for="price">Total:</label>
+                <input class="inputSty total" type="text" name="price" id="price" autocomplete="off" readonly /><br />
+              </li>
+
+              <li style="display: flex; padding: 1em; justify-content: center;">
+                <a href="payment.html" target="_self">
+                  <button type="submit" class="btn btn-outline-success" style="padding:3px" id="bookNow">Book
+                    Now</button>
+                </a>
+              </li>
+            </ul>
           </form>
-          </div>
         </div>
       </div>
 
-      <div class="modal get-in-touch" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Get in touch</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
+      <div style="margin-left: 4%; margin-right: 4%;">
+        <h2>Radisson Blu Hotel</h2>
+        <span style="font-family:cursive;">
+          RATING </br>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
 
-                onclick="closeContactUs(event)"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form class="form-control" onsubmit="closeContactUs(event)">
-                <p>Thank you for reaching out!!!</p>
-                <p>Please enter your email and we will get back to you.</p>
-                <div class="row">
-                  <div class="col">
-                    <label for="email">Username </label>
-                  </div>
-                  <div class="col-8">
-                    <input type="email" name="email" required />
-                  </div>
-                </div>
-                
-              
-            </div>
-            <div class="modal-footer d-flex justify-content-end">
-              <input type="submit" value="submit" class="btn btn-primary"/>
-            </div>
-          </form>
-          </div>
+        </span> </br>
+
+        <span style="font-family:cursive;"> AMENITIES </span>
+        <ul>
+          <li>Room Service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>Pool</li>
+        </ul>
+        <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
+          <h5 style="font-family:cursive;">DESCRIPTION</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero
+            delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus
+            architecto!</p>
         </div>
       </div>
       <!-- Modal  DIV END -->
 
-      <!-- FOOTER DIV START -->
-      <footer class="footer-div">
-        <div class="footer-div-list">
-          <div class="contact-us">
-            <button type="button" class="btn btn-info d-flex align-items-center justify-content-center text-light" onclick="handleContactUs('this')" >Contact Us</button>
-          </div>
-
-          <div class="copy-right">
-            <p ">&copy; 2020 ROOM SEARCH PVT LTD.</p>
-          </div>
-
-          <div class="social-logo">
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                src="assests/images/facebook.png"
-                width="22px"
-                height="20px"
-            /></a>
-            <a href="https://www.instagram.com" target="_blank"
-              ><img
-                src="assests/images/instagram.png"
-                width="22px"
-                height="20px"
-            /></a>
-            <a href="https://twitter.com" target="_blank"
-              ><img src="assests/images/twitter.png" width="22px" height="20px"
-            /></a>
-          </div>
-
-          
+    <footer class="footer-div">
+      <div class="footer-div-list">
+        <div class="contact-us">
+          <button type="button" class="btn btn-info d-flex align-items-center justify-content-center text-light" onclick="handleContactUs('this')" >Contact Us</button>
         </div>
-      </footer>
+  
+        <div class="copy-right">
+          <p ">&copy; 2020 ROOM SEARCH PVT LTD.</p>
+        </div>
+  
+        <div class="social-logo">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="assests/images/facebook.png"
+              width="22px"
+              height="20px"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="assests/images/instagram.png"
+              width="22px"
+              height="20px"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img src="assests/images/twitter.png" width="22px" height="20px"
+          /></a>
+        </div>
+  
+        
+      </div>
+    </footer>
 
-      <!-- FOOTER DIV END -->
-    </div>
-    <script src="scripts/common.js"></script>
+      <div id="loginAndContact">
+      </div>
+  </div>
+  <script src="scripts/common.js"></script>
+
   </body>
 </html>
