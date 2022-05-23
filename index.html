@@ -18,9 +18,12 @@
   <body>
     <div class="my-container" >
       <!-- HEADER DIV START -->
+
       <header class="my-header-div">
+
         <img class="logo-img" src="assests/images/logo.png" alt="logo" />
-        <button type="button" class="login-icon btn btn-light " onclick="handleLogin()">Login</button>
+
+        <button type="button" class="login-icon btn btn-light " id="loginM" value="login" onclick="logoutFunc()" data-toggle="modal" data-target="#loginModal"onclick="handleLogin()">LOGIN</button>
       </header>
       <!-- HEADER DIV END -->
 
@@ -65,7 +68,7 @@
 
           </div>
           
-          <div class="location-city">
+          <div class="location-city" id="more">
             <div class="location-city-list">
               <img class="black-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" width="300px" height="300px"/>
               <div class="city-name">
@@ -101,59 +104,39 @@
             
           </div>
         <div class="view-more">
-          <a href="index.html">
-            <button type="button" class="btn btn-secondary">View more</button>
-          </a>
+          
+            <button type="button" id="vm" onclick="myFunction()" class="btn btn-secondary">View More</button>
+          
         </div>
       </div>
       <!-- CONTENT DIV END -->
 
       <!-- Modal  DIV start -->
 
-      <div class="modal login-modal" tabindex="-1">
+      <div class="modal login-modal" id="loginModal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Please Login</h5>
+            <div class="modal-header" id="loginModal">
+              <h5 class="modal-title" id="loginModal">Please Login</h5>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-
-                onclick="closeLogin(event)"
               ></button>
             </div>
             <div class="modal-body">
-              <form class="form-control py-4" onsubmit="closeLogin(event)">
-                <div class="row">
-                  <div class="col">
-                    <label for="email">Username </label>
-                  </div>
-                  <div class="col-8">
-                    <input type="email" name="email" required />
-                  </div>
-                </div>
+              <form method="GET" action="index.html">
+                <div class="form-group" style="display:flex; flex-direction:column; ">
+                <li class="listSty">
+                <label class="labelSty" for="username">Username:</label>
+                <input class="inputSty" type="text" name="username" id="username" placeholder="Enter Username" required/></li>
                 <br />
-                <div class="row">
-                  <div class="col">
-                    <label for="password">Password</label>
-                  </div>
-                  <div class="col-8">
-                    <input
-                      type="password"
-                      name="password"
-                      autocomplete="off"
-                      required
-                    />
-                  </div>
-                </div>
-              
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <input type="submit" value="login" class="btn btn-primary"/>
-            </div>
-          </form>
+                <li class="listSty">
+                <label class="labelSty" for="password">Password:</label>
+                <input class="inputSty" type="password" name="password" id="password" placeholder="Enter Password" required/></li>
+                <br />
+                </form>
           </div>
         </div>
       </div>
@@ -204,7 +187,7 @@
           </div>
 
           <div class="copy-right">
-            <p ">&copy; 2020 ROOM SEARCH PVT LTD.</p>
+            <p>&copy; 2020 ROOM SEARCH PVT LTD.</p>
           </div>
 
           <div class="social-logo">
@@ -231,6 +214,7 @@
 
       <!-- FOOTER DIV END -->
     </div>
+    <script src="scripts/index.js"></script>
     <script src="scripts/common.js"></script>
   </body>
 </html>
