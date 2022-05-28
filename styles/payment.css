@@ -1,118 +1,71 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: #e0e0e0;
-  height: 100%;
-  width: 100%;
-}
-.header-div {
+.content{
+  margin: 100px 0;
   display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  background-color: rosybrown;
-}
-.container {
-  height: 100%;
-  width: 100%;
-  font-family: "Ubuntu", sans-serif;
-  position: relative;
-}
-.logo-img {
-  width: 60px;
-  height: 60px;
-}
-.login-icon {
-  display: flex;
-  flex-direction: flex-end;
-  text-decoration: none;
-  float: right;
-  margin: 20px;
-}
-h2 {
-  margin-bottom: 20px;
-}
-p strong {
-  font-family: "Tapestry", cursive;
-}
-.content-div {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-.blu-hotel-desc {
-  /* padding: 25px 0; */
-
-  line-height: 30px;
-  margin: auto 30px;
+  justify-content: center;
 }
 
-.radisson-blu-hotel img {
-  width: 350px;
-  max-height: 300px;
-}
-.radisson-blu-hotel {
-  background-color: rgb(132, 136, 139);
-  width: 51%;
-  height: 30%;
-  /* margin: 2% auto; */
+.top{
+  width: 50%;
+  height: 270px;
+  background-color: rgb(132,136,139);
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
-  margin-top: 100px;
-}
-.payment_details {
-  display: flex;
-  background-color: rosybrown;
-  width: 95%;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px 0px;
-  line-height: 30px;
+}
+
+.details{
+  padding-left: 2%;
+}
+
+.bottom{
+  background-color: rosybrown;
+  margin: 2%;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 10px 2% 200px 2%;
-}
-
-.pay-now a {
-  text-decoration: none;
-  color: black;
-}
-
-/* footer div */
-
-.footer-div {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rosybrown;
-}
-.footer-div-list {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.copy-right {
-  font-size: 10px;
-  margin: 15px 0 0 0;
+
+.bottom > div{
+  padding-top:1%;
+  margin: 0 2%;
 }
-.social-logo {
-  float: right;
-  margin: 12px 20px 12px 0px;
+
+b{
+  font-family: cursive;
 }
-.social-logo img {
-  height: 20px;
-  width: 22px;
+
+@media (max-width:768px){
+  .top{
+    width:80%;
+  }
 }
-.contact-us {
-  /* float: left;
-  padding: 5px; */
-  margin: 12px 0 12px 20px;
-}
-.contact-us a {
-  text-decoration: none;
-  color: black;
+
+@media (max-width:576px){
+  .top{
+    height:auto;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .image img{
+    width:100%;
+  }
+  .bottom{
+    flex-wrap:wrap;
+  }
+  .bottom > div{
+    flex-basis: 100%;
+  }
+  .customer{
+    padding-top:2%;
+  }
+  .payNow{
+    padding-bottom: 2%;
+  }
 }
