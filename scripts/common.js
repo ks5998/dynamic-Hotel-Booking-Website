@@ -36,7 +36,7 @@ footerTemplate.innerHTML = `
   </div>
   <div class="socialMedia">
     <a href="https://www.facebook.com" target="_blank"> <img src="assests/images/facebook.png" alt="" width="22px" height="20px"> </a>
-    <a href="https://www.instagram.com" target="_blank"> <img src="assests/images/instagram.jpg" alt="" width="22px" height="20px"> </a>
+    
     <a href="https://www.twitter.com" target="_blank"> <img src="assests/images/twitter.png" alt="" width="22px" height="20px"> </a>
   </div>
 `
